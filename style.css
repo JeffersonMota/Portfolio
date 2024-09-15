@@ -1,0 +1,529 @@
+/*Estilo Geral*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    /*plano de fundo preto*/
+    height: 100vh;
+    /*altura do site*/
+}
+
+.interface {
+    max-width: 1280px;
+    /*lagura maxima*/
+    margin: 0 auto;
+    /*margens*/
+}
+
+.flex {
+    display: flex;
+    /*deixa o objetos um do lado do outro*/
+}
+
+
+/*Botão*/
+.btn-contato button {
+    padding: 10px 40px;
+    /*espaçamento do quadrado do botão*/
+    font-size: 18px;
+    /*tamanho da fonte*/
+    font-weight: 600;
+    /* negrito da letra*/
+    background-color: #f2ff02;
+    /*cor do quadrado do botão*/
+    font-family: "Poppins", sans-serif;
+    border: 0;
+    /*retirar as bordas*/
+    border-radius: 30px;
+    /*transforma a borda do botão a redondadas*/
+    cursor: pointer;
+    /*aparecer a mão do mouse */
+}
+
+.btn-contato i {
+
+    font-size: 35px;
+    color: #f2ff02;
+    background: #000;
+    border: #000;
+}
+
+.btn-social button {
+    border-radius: 50%;
+    border: none;
+}
+
+.btn-social i {
+    padding: 1px 10px;
+    font-size: 35px;
+    color: #f2ff02;
+    background: #000;
+
+}
+
+.btn-social i:hover {
+    font-size: 30px;
+    transform: scale(1.05);
+    /*Aumenta as letras do link */
+    cursor: pointer;
+    /*aparecer a mão do mouse */
+}
+
+h2.titulo-h2 {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+    /*centralizar o testo na pagina*/
+}
+
+h2.titulo-h2 span {
+    color: #f2ff02;
+}
+
+/*Estilo Cabeçalho*/
+header {
+    padding: 40px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*logo*/
+.logo {
+    height: 100px;
+    /*altura da imagem*/
+    width: 200px;
+}
+
+/*link*/
+header a {
+    color: #6c6a6a;
+    /*cor do link*/
+    font-family: "Poppins", sans-serif;
+    /*estilo de fontes de letra*/
+    text-decoration: none;
+    /*retira as sublinhado do link*/
+    display: inline-block;
+    /*utilizando para transforma a letras grandes*/
+    transition: .2s;
+    /*tempo de trasição para efeito das letras*/
+}
+
+header a:hover {
+    color: #f2ff02;
+    /*cor do link*/
+    /* a:hover quando passa o mouse*/
+    transform: scale(1.05);
+    /*Aumenta as letras do link */
+}
+
+header nav ul {
+    list-style: none;
+    /*retira as bolinhas do link*/
+}
+
+header nav li {
+    display: inline-block;
+    /*menu na horizontal*/
+    padding: 0 40px;
+    /*espaçamento do quadrado do menu*/
+}
+
+.btn-contato button:hover {
+    box-shadow: 0px 0px 8px #f2ff02;
+    /*Efeito esfumaça botão quando passa o mouse*/
+    transform: scale(1.05);
+    /*Aumenta as letras do link */
+
+}
+
+
+/*Corpo do Site*/
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    /*alinha itens no centro*/
+    justify-content: center;
+    /*justifica texto no centro*/
+    gap: 90px;
+    /*repiro entre os elementos*/
+
+}
+
+/*Estilizando os texto do copo do site*/
+section.topo-do-site h1 {
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #f2ff02;
+    font-size: 60px;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    font-size: 25px;
+    margin: 40px 0;
+}
+
+.topo-do-site .imag-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    /* ativa animação com 2 segundos infinito alternando*/
+    height: 400px;
+    width: 400px;
+
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+
+    /*animação*/
+}
+
+/*ESTILOS DAS ESPECIALIDADES*/
+section.especialidades {
+    padding: 40px 4%;
+
+}
+
+section.especialidades .flex {
+    gap: 60px;
+
+}
+
+.especialidade-box {
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 40px;
+    justify-content: center;
+    margin-top: 45px;
+    margin-left: 40px;
+    transition: .2s;
+}
+
+.especialidade-box:hover {
+    transform: scale(1.05);
+    /* Transição do efeito na imagem*/
+    box-shadow: 0 0 8px #ffffff41;
+    /*Efeito borado quando selecionado pelo mouse*/
+}
+
+.especialidade-box i {
+    font-size: 70px;
+    color: #f2ff02;
+}
+
+.especialidade-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+
+}
+
+/*ESTILO DO SOBRE*/
+section.sobre {
+    padding: 150px 4%;
+    gap: 60px
+}
+
+section.sobre {
+    align-items: center;
+}
+
+.sobre .txt-sobre {
+    color: #fff;
+    line-height: 40px;
+    /*distancia entre linhas*/
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: #f2ff02;
+    font-size: 40px;
+}
+
+.sobre .txt-sobre p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+/*ESTILO PROJETOS*/
+section .projetos {
+    padding: 150px 4%;
+    gap: 60px
+}
+
+.projetos .txt-projetos {
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+}
+
+.projetos .txt-projetos h2 {
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.projetos .txt-projetos span {
+    color: #f2ff02;
+
+}
+
+/*Estilo Ropape*/
+footer .flex {
+    justify-content: space-between;
+}
+
+.rodape .borda {
+    border-bottom: 2px solid #f2ff02;
+}
+
+.rodape .btn-social-rodape button {
+    padding: 8px;
+    margin-top: 40px;
+    background-color: #f2ff02;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.rodape .btn-social-rodape i {
+    font-size: 35px;
+    color: #000;
+}
+
+.rodape .line-footer p i {
+    color: #f2ff02;
+    font-size: 20px;
+}
+
+.rodape .line-footer p a {
+    padding: 20px 0%;
+    color: #fff;
+    margin-left: 2px;
+}
+
+/*Projetos*/
+.projetos .videos {
+    padding: 20px 5%;
+    display: inline-block;
+}
+
+.projetos .videos h2 {
+    padding: 4px 4%;
+    color: #f2ff02;
+}
+
+.projetos .videos a {
+    text-decoration: none;
+}
+
+.videos .barra {
+    padding: 80px 4%;
+    margin-bottom: 40px;
+}
+
+/*11111111111111111111111111111111111Deixar Responsivo11111111111111111111111111111111111111111111*/
+@media screen and (max-width: 1040px) {
+
+    /*Classe Gerais*/
+    .flex {
+        flex-direction: column-reverse;
+    }
+
+    /*Margem do site*/
+    section.topo-do-site {
+        padding: 5px 8%;
+    }
+    section.sobre{
+    height: 1810px;
+    }
+    /*Logo inicial*/
+    .interface .logo a {
+        margin-left: 100px;
+    }
+
+    /*Menu topo e botão topo*/
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    /*Reduzir Tamanho*/
+    /*######Animação Principal#########*/
+    .topo-do-site .imag-topo-site img {
+        height: 300px;
+        width: 300px;
+       
+    }
+
+    /*######Alinha Imagem do Perfil######*/
+    .sobre .sobre-image imag {
+        display: block;
+     padding: 40px 4%;
+    }
+
+    /*####Alinhamento icones ######*/
+    .btn-social button {
+        font-size: 35px;
+        margin-left: 50px;
+    }
+
+    /*########Texto de baixo da Animação########*/
+    section.topo-do-site h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .topo-do-site .txt-topo-site h1 span {
+        font-size: 28px;
+    }
+
+    .topo-do-site .txt-topo-site p {
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    h2.titulo-h2 {
+        font-size: 25px;
+
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .sobre .txt-sobre h2 span{
+        font-size: 25px;
+    }
+
+    .especialidade-box {
+        display: block;
+        width: 300px;
+        text-align: center;
+        margin-left: 50px;
+
+    }
+
+    .especialidade-box i {
+        font-size: 100px;
+    }
+
+    .especialidade-box h3 {
+        font-size: 20px;
+    }
+    .projetos .txt-projetos h2 {
+      font-size: 25px;
+      margin-top: 1px;
+  }
+}
+.projetos .txt-projetos h2 span{
+  font-size: 25px;
+}
+.projetos .videos h2{
+    height: 50%;
+    width:50%;
+    
+}
+    /*Icones do rodape alinhamento*/
+    footer .flex {
+        flex-direction: column;
+        padding: 20px;
+        margin-bottom: 50px;
+    }
+
+    .rodape .btn-social-rodape button {
+        font-size: 35px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+
+    /*Alinhamento de logo e email do rodape*/
+    .rodape .logo-rodape {
+        text-align: center;
+    }
+
+    /*@@@@@@@ MENU MOBILE @@@@@@@@@@*/
+    .btn-abrir-menu i{
+        color: #f2ff02;
+        font-size: 40px;
+
+    }
+    .menu-mobile {
+        background-color:#000;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 999999;
+        width: 0%;
+        overflow: hidden;
+        transform: .2s;
+          
+    }
+    /*Comando javascript para abrir o menu */
+    .menu-mobile.abrir-menu{
+     width: 70%;   
+    }
+    /*Comando para deixa a tela em standbay*/
+    .menu-mobile.abrir-menu ~ .overlay-menu{
+        display: block;   
+       }
+    .menu-mobile .btn-fechar {
+    padding: 20px 5%;
+    }
+    .menu-mobile .btn-fechar i{
+        color: #f2ff02;
+        font-size: 30px;
+    }
+    .menu-mobile nav ul {
+        text-align: right;
+        
+    }
+    .menu-mobile nav ul li a {
+        color:#fff;
+        font-size: 20px;
+        font-weight: 300;
+        padding: 20px 8%;
+        
+    }
+
+    .menu-mobile nav ul li a:hover{
+       color:#f2ff02;
+    }
+    /*Efeito tela escura de standbay*/
+    .overlay-menu{
+        background-color: #0000007a;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top:0;
+        left: 0;
+        z-index: 88888;
+        display: none;
+
+    }
+}
